@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title date-selector
+    meta(name="viewport", content="initial-scale=1.0, user-scalable=yes")
+    script(type="text/javascript", src="http://common-module.github.io/modulejs/src/modulejs.js")
+    script(type="text/javascript", src="http://common-module.github.io/modulejs/src/modulejs-register.js")
+    script(type="text/javascript", src="http://common-module.github.io/modulejs/src/modulejs-wrapped-importer.js")
+    link(rel="stylesheet", type="text/css", href="../style/date-selector.css")
+    link(rel="stylesheet", type="text/css", href="../style/date-selector-dark.css")
+    script(type="text/javascript", src="../script/date-selector.js")
+
+  body
+    .width-300(style="width: 300px;")
+      .common-ui.date-selector.date-selector-dark.date-selector-expand.auto-init
+        .date-selector-input
+          .input-text 2014-12-12
+          .input-icon
+
+    script(type="text/javascript")
+      modulejs.importJSON('../modules.json', onImportJSON);
+
+      function onImportJSON() {
+        var DateSelector = require('common-ui:date-selector');
+        var dateSelector = new DateSelector(document.querySelector('.common-ui.date-selector'));
+      }
