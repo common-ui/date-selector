@@ -1,3 +1,6 @@
 {
-    "jquery:jquery": "http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"
+    "jquery:jquery": "http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js",
+    "event:Event": "http://common-module.github.io/event/src/Event.js",
+    "event:EventTarget": "http://common-module.github.io/event/src/EventTarget.js",
+    "util:inherit": "http://common-module.github.io/util/src/inherit.js"
 }
